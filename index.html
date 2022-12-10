@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Grid-Layout</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/reset.local.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="section">
+        <h2 class="heading">Architectural Photography</h2>
+
+        <div class="gallery">
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Jezael Melgoza</span><span class="text">5 June 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Tom W</span><span class="text">30 March 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Johan Mouchet</span><span class="text">14 August 2019</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Federico Di Dio</span
+              ><span class="text">29 October 2020 </span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Casey Horner</span><span class="text">9 July 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Alexander Rotker</span
+              ><span class="text">22 April 2022</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="heading">Still Life Photography</h2>
+
+        <div class="gallery">
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Robert Lukeman</span><span class="text">30 June 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Sean Oulashin</span
+              ><span class="text">5 September 2019</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide gallery_item__tall">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/770"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>John Fowler</span><span class="text">10 August 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__tall">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/770"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Dave Hoefler</span
+              ><span class="text">13 February 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Léonard Cotte</span
+              ><span class="text">5 September 2019</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Rob Mulally</span><span class="text">30 May 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="heading">Portrait and Fashion Photography</h2>
+
+        <div class="gallery">
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Pooja Chaudhary</span><span class="text">30 June 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__tall">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/770"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Dom Hill</span><span class="text">13 October 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Seth Doyle</span><span class="text">30 May 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>devn</span><span class="text">30 June 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__tall">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/770"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Noah Buscher</span
+              ><span class="text">13 February 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__tall">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/770"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Sincerely Media</span
+              ><span class="text">7 January 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Seth Doyle</span><span class="text">30 June 2020</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Melissa Askew</span><span class="text">29 April 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item gallery_item__wide">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/770/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Brooke Cagle</span><span class="text">5 August 2019</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+
+          <div class="gallery_item">
+            <img
+              class="gallery_item_photo"
+              src="https://placekitten.com/370/370"
+              alt="Kitten"
+            />
+
+            <div class="gallery_item_info">
+              <span>Clem Onojeghuo</span><span class="text">1 July 2021</span>
+            </div>
+
+            <div class="gallery_item_button">
+              <img
+                class="gallery_item_button_icon"
+                src="./images/like.svg"
+                alt="Like button"
+              />
+
+              <img
+                class="gallery_item_button_icon"
+                src="./images/download.svg"
+                alt="Download button"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
