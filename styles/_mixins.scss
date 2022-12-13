@@ -1,0 +1,8 @@
+@mixin position($top: 20px, $bottom: unset) {
+  position: absolute;
+  top: $top;
+  bottom: $bottom;
+  left: 20px;
+  right: 20px;
+  z-index: 1;
+}

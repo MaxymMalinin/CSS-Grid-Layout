@@ -1,8 +1,9 @@
-@import "./_fonts.scss";
-@import "./variables";
+@import './_fonts.scss';
+@import './variables';
+@import './mixins';
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: $font-family-primary;
   font-size: 20px;
   line-height: 1.172;
   font-weight: 500;
@@ -19,7 +20,7 @@ body {
 }
 
 .heading {
-  font-family: "Delius Unicase", cursive;
+  font-family: $font-family-secondary;
   font-size: 36px;
   font-weight: 400;
   line-height: 1.25194;
@@ -42,7 +43,7 @@ body {
     border-radius: 20px;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       top: 0;
@@ -86,22 +87,14 @@ body {
 
     &_info {
       display: flex;
-      position: absolute;
       justify-content: space-between;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      z-index: 1;
+      @include position(unset, 20px);
     }
 
     &_button {
       display: none;
-      position: absolute;
       justify-content: space-between;
-      top: 20px;
-      left: 20px;
-      right: 20px;
-      z-index: 1;
+      @include position;
 
       &_icon {
         background-color: $color-bg-icon;
